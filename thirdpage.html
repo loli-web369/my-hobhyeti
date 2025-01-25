@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamouna's Surprise Game!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f7e7f7;
+            padding: 50px;
+            color: #3d3d3d;
+        }
+        h1 {
+            color: #ff66b2;
+            font-size: 3em;
+        }
+        .heart {
+            font-size: 4em;
+            cursor: pointer;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+        .heart:hover {
+            transform: scale(1.2);
+        }
+        .message {
+            display: none;
+            font-size: 1.5em;
+            color: #ff66b2;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the Hearts, Yamouna! ❤️</h1>
+    <p>Click on the hearts below to reveal a surprise message just for you!</p>
+
+    <!-- Hearts that can be clicked -->
+    <div class="heart" onclick="revealMessage()">💖</div>
+    <div class="heart" onclick="revealMessage()">💘</div>
+    <div class="heart" onclick="revealMessage()">💝</div>
+
+    <div class="message" id="hiddenMessage">
+        💞 You're the best friend anyone could ask for, and I am so lucky to have you in my life. 💞
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById('hiddenMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

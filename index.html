@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for Yamouna</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7e7f7;
+            text-align: center;
+            padding: 50px;
+            color: #3d3d3d;
+        }
+        h1 {
+            color: #ff66b2;
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+            color: #555;
+        }
+        .emoji {
+            font-size: 1.8em;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1.2em;
+            width: 250px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff3385;
+        }
+        .name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #ff66b2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, Yamouna! 🌸</h1>
+    <p class="name">Yamouna, you're my best friend and I miss you more than words can say!</p>
+    
+    <p>YAMOUNTI YA A7LAA BOGRAAA nhbk barchaa wlh braa8m kol chy wisaaa thbk barchaa w mosta7il t5alik mhmaaa 3mlt promise (bch nhlk ay chaak w bara fhmtni w shih nt8chch fis3w nsbk w nhez rohi w nemchi ama fi msl7tk base ) twhchtk barchaaa wlhhh 💖💫</p>
+
+    <p class="emoji">💞 I'm so grateful for you in my life, and I can't wait to see you again! 💞</p>
+    <p>To continue this surprise, please enter the secret code:</p>
+    <input type="text" id="secretCode" placeholder="Enter Code">
+    <br>
+    <button onclick="checkCode()">Enter</button>
+
+    <script>
+        function checkCode() {
+            var code = document.getElementById('secretCode').value;
+            if (code === "bogra habbibt 2alby") { // secret code change
+                window.location.href = "secretpage.html"; // redirect to secret page
+            } else {
+                alert("Incorrect code, please try again!");
+            }
+        }
+    </script>
+</body>
+</html>
